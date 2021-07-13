@@ -1,4 +1,4 @@
-const Token = "ODI5NjIzODk0NDI3OTU5MzM2.YG61dg.85DsRpV-8QIIkTzB5UsVu2TBQFI";
+const Token = "";
 const Discord = require("discord.js");
 const bot = new Discord.Client
 const guild = Discord.Guild
