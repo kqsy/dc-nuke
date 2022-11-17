@@ -22,7 +22,7 @@ then start `run.bat`
 PROBLEMS
 ---------
 
-Please open a GitHub issue at https://github.com/Kosurii/dc-nuke/issues
+Please open a GitHub issue at https://github.com/kqsy/dc-nuke/issues
 
 
 -----------------------------------------------------------------------
