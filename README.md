@@ -1,6 +1,6 @@
 dc-nuke
 =======
-A Discord bot server nuker
+A Discord bot server nuker written in Node.js
 
 ----------------
 
