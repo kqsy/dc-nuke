@@ -15,26 +15,10 @@ bot.on("message", async function (msg) {
 if (msg.content.indexOf(`${prefix}join`) === 0) {
   msg.member.lastMessage.delete();
   if(!msg.member.voice.channel) return msg.channel.send("You are not in a voice channel");
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join();
-  msg.member.voice.channel.leave();
-  msg.member.voice.channel.join(); 
-  msg.member.voice.channel.leave(); 
-  msg.member.voice.channel.join(); 
-  msg.member.voice.channel.leave();
+  for(let i =0;i<=10;i++) {
+    msg.member.voice.channel.join();
+    msg.member.voice.channel.leave();
+  }
 }
 
 if (msg.content.indexOf(`${prefix}leave`) === 0) {
