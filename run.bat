@@ -1,5 +1,5 @@
 @echo off
-title dev by Kosuri#6719
+title dev by kxsy
 color 3
 cd .
 node .
